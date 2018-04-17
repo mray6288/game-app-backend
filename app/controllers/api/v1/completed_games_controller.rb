@@ -14,7 +14,7 @@ class Api::V1::CompletedGamesController < ApplicationController
   private
 
   def completed_game_params
-  	params.require(:completed_game).permit(:winner_id, :loser_id, :winning_score, :losing_score)
+  	params.require(:completed_game).permit(:user_id, :score)
   end
 
 end

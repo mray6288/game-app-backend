@@ -16,10 +16,8 @@ ActiveRecord::Schema.define(version: 20180416175849) do
   enable_extension "plpgsql"
 
   create_table "completed_games", force: :cascade do |t|
-    t.integer "winner_id"
-    t.integer "loser_id"
-    t.integer "winning_score"
-    t.integer "losing_score"
+    t.integer "user_id"
+    t.integer "score"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

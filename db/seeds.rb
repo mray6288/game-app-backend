@@ -10,4 +10,5 @@
 ray = User.create(username: 'Ray')
 zach = User.create(username: 'Zach')
 
-CompletedGame.create(winner_id: zach.id, loser_id: ray.id, winning_score: 10, losing_score: 1)
+CompletedGame.create(user_id: zach.id, score: 15)
+CompletedGame.create(user_id: ray.id, score: 20)
